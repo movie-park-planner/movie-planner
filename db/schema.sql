@@ -15,8 +15,7 @@ CREATE TABLE movie_showings
     underwriter varchar (255),
     park_address varchar (255) NOT NULL,
     location varchar (255) NOT NULL,
+    selected BOOLEAN NOT NULL default false,
 	PRIMARY KEY (id)
 );
-
-
 
