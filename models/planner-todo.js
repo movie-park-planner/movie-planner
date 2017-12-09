@@ -8,7 +8,7 @@ var movie = {
     });
   },
   // The variables cols and vals are arrays.
-  create: function(cols, vals, cb) {
+  findOne: function(cols, vals, cb) {
     orm.findOne("movie_showings", cols, vals, function(res) {
       cb(res);
     });
