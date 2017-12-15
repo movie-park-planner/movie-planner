@@ -24,4 +24,8 @@ app.use("/", routes);
 
 app.listen(port);
 
+<<<<<<< HEAD
+console.log("App is listening on: " + port);
+=======
 console.log("Listening on port " + port);
+>>>>>>> Development

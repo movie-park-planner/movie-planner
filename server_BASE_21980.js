@@ -23,5 +23,3 @@ var routes = require("./controllers/moviesController.js");
 app.use("/", routes);
 
 app.listen(port);
-
-console.log("Listening on port " + port);
