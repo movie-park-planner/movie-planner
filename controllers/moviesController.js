@@ -16,6 +16,16 @@ router.get("/", function(req, res) {
   });
 });
 
+router.post("/api/comments", function(req, res) {
+  cat.create([
+    "name", "comment"
+  ], [
+    req.body.name, req.body.comment
+  ], function(result) {
+    // Send back the ID of the new quote
+    res.json({ id: result.insertId });
+  });
+});
 
 router.put("/api/movies/:id", function(req, res) {
   var condition = "id = " + req.params.id;
