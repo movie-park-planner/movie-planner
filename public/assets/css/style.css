@@ -6,9 +6,107 @@
  * Made By MaterializeCSS.com
  */
 
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+img{
+  opacity: .8;
+}
+
+p {
+  line-height: 2rem;
+}
+
+body{
+  font-family: 'Work Sans', sans-serif;
+  /*background-color: #ffd180;*/
+}
+
+#movietbl{
+  color:  #616161;
+  border-color: #ff9100
+}
+
+.text1{
+  color: #ff6d00;
+}
+
+.page-footer{
+  background-color: #ff6d00;
+}
+
+.collection-item{
+  background-color: #ffd180;
+}
+
+.h5 {
+  color: purple;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  /*min-height: 250px;*/
+  line-height: 0;
+  height: 115px;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+    height: auto;
+    color: #ff9100;
+    /*-webkit-text-stroke-width: 1px;*/
+    /*-webkit-text-stroke-color: #ffd180;*/
+    text-shadow: 2px 2px 3px black; 
+  }
+
+.collection-item{
+  background-color: #e0e0e0;
+}
+
+#index-banner{
+  height:250px;
+}
+
+/*.card{
+  float: left;
+  position: relative;
+  margin: 10px;
+
+}
+
+#movietbl{
+  float:left;
+}*/
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+  background-color: #424242;
 }
