@@ -6,7 +6,7 @@ CREATE TABLE movie_showings
 (
 	id int NOT NULL AUTO_INCREMENT,
 	day varchar(10) NOT NULL,
-	date date NOT NULL,
+	date NOT NULL,
     park varchar (255) NOT NULL,
 	park_phone varchar(15) NOT NULL,
     title varchar (255) NOT NULL,
