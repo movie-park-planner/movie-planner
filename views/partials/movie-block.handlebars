@@ -2,9 +2,7 @@
 	
 	<div>{{day}} || {{date}} || {{title}} || {{park}} || Rated: {{rating}}
 
-		<a href="#!" class="secondary-content"><input type="checkbox" data-id="{{this.id}}" />
-			<label for="{{this.id}}">Add</label>
-		</a>
+	<button class="add-checkbox" data-id="{{this.id}}" data-selected="{{this.selected}}">{{#if selected}}Add{{else}}Remove{{/if}}</button>
 
 	</div>
 
