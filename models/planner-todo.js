@@ -13,6 +13,11 @@ var movie = {
       cb(res);
     });
   },
+  create: function(cols, vals, cb) {
+    orm.create("comments", cols, vals, function(res) {
+      cb(res);
+    });
+  },
   update: function(objColVals, condition, cb) {
     orm.update("movie_showings", objColVals, condition, function(res) {
       cb(res);

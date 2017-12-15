@@ -19,3 +19,12 @@ CREATE TABLE movie_showings
 	PRIMARY KEY (id)
 );
 
+
+CREATE TABLE comments
+(
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(55) NOT NULL,
+    comment varchar(500) NOT NULL,
+    PRIMARY KEY (id)
+);
+
