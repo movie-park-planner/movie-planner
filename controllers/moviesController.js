@@ -20,6 +20,7 @@ router.get("/", function(req, res) {
     res.render("index", hbsObject, hbsObject2);
   });
 });
+});
 
 router.get("/day", function(req, res) {
   movie.findOne("day", req.body.day, function(data) {
