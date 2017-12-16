@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/comments", function(req, res) {
-  movie.create([
+  movie.createComment([
     "name", "comment"
   ], [
     req.body.name, req.body.comment
