@@ -13,6 +13,7 @@ var movie = {
       cb(res);
     });
   },
+
   createComment: function(cols, vals, cb) {
     orm.create("comments", cols, vals, function(res) {
       cb(res);
