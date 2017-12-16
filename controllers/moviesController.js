@@ -15,7 +15,7 @@ router.get("/", function(req, res) {
 //     res.render("index", hbsObject);
   });
   movie.allComments(function(data) {
-    hbsObject += {
+    var hbsObject = {
       comments: data
     };
     console.log("Got all comments");
