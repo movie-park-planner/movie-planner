@@ -19,9 +19,9 @@ router.get("/", function(req, res) {
       comments: data
     };
     console.log("Got all comments");
-//     res.render("index", hbsObject);
+    res.render("index", hbsObject);
   });
-  res.render("index", hbsObject);
+//   res.render("index", hbsObject);
 });
 
 router.get("/day", function(req, res) {
