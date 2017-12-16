@@ -25,17 +25,14 @@ var movie = require("../models/planner-todo.js");
 router.get("/", function(req, res) {
   objectArray = [];
 
-  var hbsObject;
-  var hbsObject2;
-
   movie.all(function(data){
-    hbsObject = data;
+    var hbsObject = data;
     console.log ("got movies");
     objectArray.push(hbsObject);
   });
 
   movie.allComments(function(data){
-    hbsObject2 = data;
+    var hbsObject2 = data;
     console.log("got comments");
     objectArray.push(hbsObject2);
   });
