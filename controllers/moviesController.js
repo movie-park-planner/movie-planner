@@ -2,7 +2,7 @@ var express = require("express");
 
 var router = express.Router();
 
-// Import the model (cat.js) to use its database functions.
+// Import the model to use its database functions.
 var movie = require("../models/planner-todo.js");
 
 // Create all our routes and set up logic within those routes where required.
@@ -16,6 +16,16 @@ router.get("/", function(req, res) {
   });
 });
 
+router.post("/api/comments", function(req, res) {
+  movie.createComment([
+    "name", "comment"
+  ], [
+    req.body.name, req.body.comment
+  ], function(result) {
+    // Send back the ID of the new quote
+    res.json({ id: result.insertId });
+  });
+});
 
 router.put("/api/movies/:id", function(req, res) {
   var condition = "id = " + req.params.id;

@@ -24,6 +24,11 @@ body{
   /*background-color: #ffd180;*/
 }
 
+#movie-schedule{
+ overflow: scroll;
+ height: 500px;
+}
+
 #movietbl{
   color:  #616161;
   border-color: #ff9100
