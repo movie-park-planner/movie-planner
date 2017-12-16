@@ -145,6 +145,14 @@
             <div class="input-field col s12">
               <textarea id="textarea1" class="materialize-textarea"></textarea>
               <label for="textarea1">Your Tip</label>
+              <a class="right waves-effect waves-teal lighten-1 btn col s12">Add your tip</a><br>
+                <div class="card-content col s12">
+                    <p><ol class="collection with-header teal-text text-lighten-1 striped"> 
+                        {{#each comments}}
+                       {{> comment-block}}
+                  {{/each}}
+                    </ol></p>
+                </div>
         </div>
         </form>
         </div>
