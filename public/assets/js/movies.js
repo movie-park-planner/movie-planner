@@ -43,5 +43,20 @@ $(function() {
       }
     );
   });
+  
+  $("#day-dropdown").on("change", function(){
+	day: $(this).attr("data-value");
+		
+		$.ajax("/day" {
+      type: "GET",
+      data: day
+    }).then(
+      function() {
+        console.log("selected movies to", day);
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  });
 
 });
