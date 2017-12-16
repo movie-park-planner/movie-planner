@@ -16,6 +16,16 @@ router.get("/", function(req, res) {
   });
 });
 
+router.get("/", function(req, res) {
+  movie.allComments(function(data) {
+    var hbsObject = {
+      comments: data
+    };
+    console.log(hbsObject);
+    res.render("index", hbsObject);
+  });
+});
+
 router.get("/day", function(req, res) {
   movie.findOne("day", req.body.day, function(data) {
     var hbsObject = {
