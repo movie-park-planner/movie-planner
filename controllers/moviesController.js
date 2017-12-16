@@ -16,7 +16,7 @@ router.get("/", function(req, res) {
   });
 });
 
-router.get("/", function(req, res) {
+router.get("/day", function(req, res) {
   movie.findOne("day", req.body.day, function(data) {
     var hbsObject = {
       movies: data
