@@ -35,6 +35,8 @@ router.get("/", function(req, res) {
     var hbsObject2 = data;
     console.log("got comments");
   });
+  
+  console.log(hbsObject);
 
   var theObject = {
       movies: hbsObject,
