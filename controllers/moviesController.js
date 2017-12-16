@@ -11,14 +11,14 @@ router.get("/", function(req, res) {
     var hbsObject = {
       movies: data
     };
-    console.log(hbsObject);
+    console.log("Got all movies");
     res.render("index", hbsObject);
   });
   movie.allComments(function(data) {
     var hbsObject = {
       comments: data
     };
-    console.log(hbsObject);
+    console.log("Got all comments");
     res.render("index", hbsObject);
   });
 });
