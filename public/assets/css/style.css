@@ -63,7 +63,8 @@ body{
 .parallax-container .section {
     width: 100%;
     height: auto;
-    color: #ff9100;
+    color: #ff6d00;
+    /*color: #ff9100;*/
     /*-webkit-text-stroke-width: 1px;*/
     /*-webkit-text-stroke-color: #ffd180;*/
     text-shadow: 2px 2px 3px black; 

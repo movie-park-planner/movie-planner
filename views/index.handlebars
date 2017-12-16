@@ -3,7 +3,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center orange-text text-accent-3">Movies in the Park Planner</h1>
+        <h1 class="header center orange-text text-accent-4">Movies in the Park Planner</h1>
         <div class="row center">
           <h5 class="header col s12 orange-text text-accent-2">A personalized list of all of the movies in the park you want to see.</h5>
         </div>
@@ -25,8 +25,8 @@
       <div class="row">
         <div class="col s12 m6">
           <div class="icon-block">
-            <h2 class="center orange-text text-accent-3"><i class="material-icons">local_movies</i></h2>
-            <h5 class="center grey-text text-darken-2">Movies in the park</h5>
+            <h2 class="center orange-text text-accent-4"><i class="material-icons">local_movies</i></h2>
+            <h5 class="center grey-text text-darken-2">The Movies</h5>
 
             <p class="grey-text text-darken-2">Hollywood stars return to Chicago skies this summer, as Movies in the Parks brings big screen entertainment to local parks for the seventeenth season. Featuring everything from classics from the Golden Age of Hollywood and retro childhood favorites, to the best family-friendly box office favorites from recent years. See the list below for upcoming showings in a park near you. Want to plan your summer outings?</p>
           </div>
@@ -34,10 +34,10 @@
 
         <div class="col s12 m6">
           <div class="icon-block">
-            <h2 class="center orange-text text-accent-3"><i class="material-icons">event</i></h2>
+            <h2 class="center orange-text text-accent-4"><i class="material-icons">event</i></h2>
             <h5 class="center grey-text text-darken-2">The Planner</h5>
 
-            <p class="grey-text text-darken-2">This app will help you keep a running list of all of the movies you want to see and and have seen this summer. Blah blah blah blah blah blah blah blah. Blah blah blah blah blah blah blah blah. Blah blah blah blah blah blah blah blah. Blah blah blah blah blah blah blah blah. Blah blah blah blah blah blah blah blah. Blah blah blah blah blah blah blah blah.</p>
+            <p class="grey-text text-darken-2">Use the planner to keep a running list of the of the movies you plan to see in the park this summer. Simply select movies from the schedule to add to your personal list. Use the maps feature find information on the park's location and dont forget to leave a tip for fellow movie-goers!</p>
           </div>
         </div>
 
@@ -65,9 +65,30 @@
   </div>
 
   <div class="container">
-  <div class = "row"></div>
-  <div class="row">
-  <a class='dropdown-button btn' data-activates='dropdown1'>Select Day</a>
+ 
+    <div class="row">
+
+            <div class="col s12 m6">
+            <div class="icon-block">
+            <h2 class="center orange-text text-accent-4"><i class="material-icons">playlist_add</i></h2>
+            <h5 class="center grey-text text-darken-2">Movie Schedule</h5>
+            </div>
+            </div>
+
+
+              <div class="col s12 m6">
+            <div class="icon-block">
+            <h2 class="center orange-text text-accent-4"><i class="material-icons">playlist_add_check</i></h2>
+            <h5 class="center grey-text text-darken-2">Your List</h5>
+            </div>
+            </div>
+          </div>
+
+
+<div class="row">
+  <div class="container col s1">
+  </div>  
+  <a class='center dropdown-button btn col s4 grey darken-2' data-activates='dropdown1'>Select Day</a>
   <ul id='dropdown1' class='dropdown-content'>
     <li><a data-value="Mon">Monday</a></li>
     <li><a data-value="Tue">Tuesday</a></li>
@@ -78,13 +99,15 @@
     <li><a data-value="Sun">Sunday</a></li>
   </ul>
 </div>
+<div class="container col s1">
+</div> 
 
     <div class="section">
 
       <div class="row">
         <div class="col s12 m6 l6">
           <div class="orange-text accent-4" id="movie-schedule">
-              <span class="center card-title grey-text text-darken-2">Movie Schedule</span>
+              {{!-- <span class="center card-title grey-text text-darken-2">Movie Schedule</span> --}}
 
             <div class="card-content">
                <ol class="collection with-header orange-text text-accent-3">
@@ -100,9 +123,9 @@
         </div>
             
 
+             {{!-- <span class="center card-title grey-text text-darken-2 col6">Your List</span> --}}
           <div class="col s12 m6 l6">
           <div class="orange-text accent-4">
-           <span class="center card-title grey-text text-darken-2">Your List</span> 
             </div>
             <div class="card-content">
                <ol class="collection with-header orange-text text-accent-3 "> 
@@ -117,6 +140,7 @@
             </div>
           </div>
         </div>
+
   </div>
 </div>
   <div class="parallax-container valign-wrapper">
@@ -131,12 +155,34 @@
   </div>
 
 <div class="container">
+
           <div class="section">
+          <div class="row">
+
+            <div class="col s12 m6">
+            <div class="icon-block">
+            <h2 class="center orange-text text-accent-4"><i class="material-icons">map</i></h2>
+            <h5 class="center grey-text text-darken-2">Map</h5>
+            </div>
+            </div>
+
+
+              <div class="col s12 m6">
+            <div class="icon-block">
+            <h2 class="center orange-text text-accent-4"><i class="material-icons">thumbs_up_down</i></h2>
+            <h5 class="center grey-text text-darken-2">Tips</h5>
+            </div>
+            </div>
+          </div>
+
+
             <div class="row">
               <div class="col s12 m6 l6"> 
               
-              <div id="map"><a href="https://data.cityofchicago.org/Events/Chicago-Park-District-Movies-in-the-Parks-2017-Map/irwg-t6mm" target="_blank" style="font-size:12px;font-weight:bold;text-decoration:none;color:#333333;font-family:arial;">Chicago Park District: Movies in the Parks 2017 - Map</a></p><iframe width="500px" title="Chicago Park District: Movies in the Parks 2017 - Map" height="425px" src="https://data.cityofchicago.org/w/irwg-t6mm/3q3f-6823?cur=j_-10UEp1EN&from=root" frameborder="0"scrolling="no"><a href="https://data.cityofchicago.org/Events/Chicago-Park-District-Movies-in-the-Parks-2017-Map/irwg-t6mm" title="Chicago Park District: Movies in the Parks 2017 - Map" target="_blank">Chicago Park District: Movies in the Parks 2017 - Map</a></iframe><p><a href="http://www.socrata.com/" target="_blank">Powered by Socrata</a></div>
-          </div>
+                <br><div id="map">
+                  <iframe width="500px" title="Chicago Park District: Movies in the Parks 2017 - Map" height="425px" src="https://data.cityofchicago.org/w/irwg-t6mm/3q3f-6823?cur=j_-10UEp1EN&from=root" frameborder="0"scrolling="no"><a href="https://data.cityofchicago.org/Events/Chicago-Park-District-Movies-in-the-Parks-2017-Map/irwg-t6mm" title="Chicago Park District: Movies in the Parks 2017 - Map" target="_blank">Chicago Park District: Movies in the Parks 2017 - Map</a></iframe>
+                </div>
+              </div>
         
         <div class="col s12 m6 l6">   
           <div class="row">
@@ -148,7 +194,7 @@
             <div class="input-field col s12">
               <textarea id="textarea1" class="materialize-textarea"></textarea>
               <label for="textarea1">Your Tip</label>
-              <button class="right waves-effect waves-teal lighten-1 btn col s12" id="submit-button" type="submit">Add your tip</button><br>
+              <button class="right grey lighten-1 waves-effect waves-grey darken-2 btn col s12" id="submit-button" type="submit">Add your tip</button><br>
                 <div class="card-content col s12">
                     <p><ul class="collection with-header teal-text text-lighten-1 striped"> 
                         {{#each comments}}
