@@ -65,23 +65,26 @@
   </div>
 
   <div class="container">
+  <div class = "row"></div>
+  <div class="row">
+  <a class='dropdown-button btn' data-activates='dropdown1'>Select Day</a>
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a data-value="Mon">Monday</a></li>
+    <li><a data-value="Tue">Tuesday</a></li>
+    <li><a data-value="Wed">Wednesday</a></li>
+    <li><a data-value="Thu">Thursday</a></li>
+    <li><a data-value="Fri">Friday</a></li>
+    <li><a data-value="Sat">Saturday</a></li>
+    <li><a data-value="Sun">Sunday</a></li>
+  </ul>
+</div>
+
     <div class="section">
 
       <div class="row">
         <div class="col s12 m6 l6">
           <div class="orange-text accent-4" id="movie-schedule">
               <span class="center card-title grey-text text-darken-2">Movie Schedule</span>
-              
-              <select id="day-dropdown">
-  <option data-value="Mon">Monday</option>
-  <option data-value="Tue">Tuesday</option>
-  <option data-value="Wed">Wednesday</option>
-  <option data-value="Thu">Thursday</option>
-  <option data-value="Fri">Friday</option>
-  <option data-value="Sat">Saturday</option>
-  <option data-value="Sun">Sunday</option>
-</select>
-
 
             <div class="card-content">
                <ol class="collection with-header orange-text text-accent-3">
@@ -145,6 +148,14 @@
             <div class="input-field col s12">
               <textarea id="textarea1" class="materialize-textarea"></textarea>
               <label for="textarea1">Your Tip</label>
+              <a class="right waves-effect waves-teal lighten-1 btn col s12">Add your tip</a><br>
+                <div class="card-content col s12">
+                    <p><ol class="collection with-header teal-text text-lighten-1 striped"> 
+                        {{#each comments}}
+                       {{> comment-block}}
+                  {{/each}}
+                    </ol></p>
+                </div>
         </div>
         </form>
         </div>

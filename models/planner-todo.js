@@ -7,12 +7,18 @@ var movie = {
       cb(res);
     });
   },
+  allComments: function(cb) {
+    orm.all("comments", function(res) {
+      cb(res);
+    });
+  },
   // The variables cols and vals are arrays.
   findOne: function(cols, vals, cb) {
     orm.findOne("movie_showings", cols, vals, function(res) {
       cb(res);
     });
   },
+
   createComment: function(cols, vals, cb) {
     orm.create("comments", cols, vals, function(res) {
       cb(res);
