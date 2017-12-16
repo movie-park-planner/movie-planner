@@ -14,13 +14,13 @@ router.get("/", function(req, res) {
     console.log("Got all movies");
     res.render("index", hbsObject);
   });
-  movie.allComments(function(data) {
-    var hbsObject = {
-      comments: data
-    };
-    console.log("Got all comments");
-    res.render("index", hbsObject);
-  });
+//   movie.allComments(function(data) {
+//     var hbsObject = {
+//       comments: data
+//     };
+//     console.log("Got all comments");
+//     res.render("index", hbsObject);
+//   });
 //   res.render("index", hbsObject);
 });
 
