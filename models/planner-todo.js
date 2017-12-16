@@ -3,7 +3,12 @@ var orm = require("../config/orm.js");
 
 var movie = {
   all: function(cb) {
-    orm.all("movie_showings", "comments", function(res) {
+    orm.all("movie_showings", function(res) {
+      cb(res);
+    });
+  },
+  allComments: function(cb) {
+    orm.all("comments", function(res) {
       cb(res);
     });
   },
