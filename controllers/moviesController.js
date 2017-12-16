@@ -6,20 +6,43 @@ var router = express.Router();
 var movie = require("../models/planner-todo.js");
 
 // Create all our routes and set up logic within those routes where required.
+// router.get("/", function(req, res) {
+//   movie.all(function(data) {
+//     var hbsObject = {
+//       movies: data
+//     };
+//     console.log("Got all movies");
+//   movie.allComments(function(data) {
+//     var hbsObject2 = {
+//       comments: data
+//     };
+//     console.log("Got all comments");
+//     res.render("index", hbsObject, hbsObject2);
+//   });
+// });
+// });
+
 router.get("/", function(req, res) {
-  movie.all(function(data) {
-    var hbsObject = {
-      movies: data
-    };
-    console.log("Got all movies");
-  movie.allComments(function(data) {
-    var hbsObject2 = {
-      comments: data
-    };
-    console.log("Got all comments");
-    res.render("index", hbsObject, hbsObject2);
+  var hbsObject;
+  var hbsObject2;
+
+  movie.all(function(data){
+    var hbsObject = data;
+    console.log ("got movies");
   });
-});
+
+  movie.allComments(function(data){
+    var hbsObject2 = data;
+    console.log("got comments");
+  });
+
+  var theObject = {
+      movies: hbsObject,
+      comments: hbsObject2
+    };
+
+  res.render("index", theObject);
+
 });
 
 router.get("/day", function(req, res) {
