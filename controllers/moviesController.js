@@ -12,16 +12,13 @@ router.get("/", function(req, res) {
       movies: data
     };
     console.log("Got all movies");
-    res.render("index", hbsObject);
+  movie.allComments(function(data) {
+    var hbsObject2 = {
+      comments: data
+    };
+    console.log("Got all comments");
+    res.render("index", hbsObject, hbsObject2);
   });
-//   movie.allComments(function(data) {
-//     var hbsObject = {
-//       comments: data
-//     };
-//     console.log("Got all comments");
-//     res.render("index", hbsObject);
-//   });
-//   res.render("index", hbsObject);
 });
 
 router.get("/day", function(req, res) {
