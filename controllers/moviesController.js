@@ -27,12 +27,12 @@ router.get("/", function(req, res) {
   var hbsObject2;
 
   movie.all(function(data){
-    var hbsObject = data;
+    hbsObject = data;
     console.log ("got movies");
   });
 
   movie.allComments(function(data){
-    var hbsObject2 = data;
+    hbsObject2 = data;
     console.log("got comments");
   });
   
