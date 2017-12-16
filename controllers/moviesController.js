@@ -14,6 +14,13 @@ router.get("/", function(req, res) {
     console.log(hbsObject);
     res.render("index", hbsObject);
   });
+  movie.allComments(function(data) {
+    var hbsObject = {
+      comments: data
+    };
+    console.log(hbsObject);
+    res.render("index", hbsObject);
+  });
 });
 
 router.get("/day", function(req, res) {
