@@ -1,5 +1,5 @@
-<li data-id="{{id}}">
+<li data-id="{{id}}" {{#unless id}}style="display: none"{{/unless}}>
 	
-	{{name}} says: "{{comment}}"
+	{{id}} {{name}} says: "{{comment}}"
 
 	</li>
