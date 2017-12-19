@@ -198,7 +198,9 @@
                 <div class="card-content col s12" id="comments">
                     <p><ul class="collection with-header teal-text text-lighten-1 striped"> 
                         {{#each moviescomments}}
-                       {{> comment-block id=1}}
+                        {{#if id}}
+                       {{> comment-block id='1'}}
+                       {{/if}}
                   {{/each}}
                     </ul></p>
                 </div>
