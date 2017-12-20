@@ -1,6 +1,6 @@
 <li class="collection-item" data-id="{{id}}" data-selected="{{selected}}">
 	
-	<div>{{day}} || {{date}} || <span style="font-style: italic"> {{title}} </span> || {{park}} || Rated: {{rating}}
+	<div>{{day}} || {{formatDate date}} || <span style="font-style: italic"> {{title}} </span> || {{park}} || Rated: {{rating}}
 
 	<button class="add-checkbox" data-id="{{this.id}}" data-selected="{{this.selected}}">{{#if selected}}Add{{else}}Remove{{/if}}</button>
 

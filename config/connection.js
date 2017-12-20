@@ -9,7 +9,7 @@ connection = mysql.createConnection({
   port: 3306,
   host: "localhost",
   user: "root",
-  password: "Gizmos11",
+  password: "",
   database: "movie_planner_db"
 });
 };
