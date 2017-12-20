@@ -11,7 +11,6 @@ router.get("/", function(req, res) {
       movies: data
     };
     console.log(hbsObject);
-    console.log(data);
     res.render("index", hbsObject);
   });
 });
