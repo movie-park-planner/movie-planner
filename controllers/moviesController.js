@@ -8,7 +8,7 @@ var movie = require("../models/planner-todo.js");
 router.get("/", function(req, res) {
   movie.all(function(data) {
     var hbsObject = {
-      moviescomments: data
+      movies: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);

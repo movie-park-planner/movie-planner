@@ -111,7 +111,7 @@
 
             <div class="card-content">
                <ol class="collection with-header orange-text text-accent-3">
-                  {{#each moviescomments}}
+                  {{#each movies}}
                      {{#unless selected}}
                         {{> movie-block selected=true}}
                     {{/unless}}
@@ -129,7 +129,7 @@
             </div>
             <div class="card-content">
                <ol class="collection with-header orange-text text-accent-3 "> 
-                  {{#each moviescomments}}
+                  {{#each movies}}
                      {{#if selected}}
                        {{> movie-block selected=false}}
                       {{/if}}
@@ -180,7 +180,7 @@
               <div class="col s12 m6 l6"> 
               
                 <br><div id="map">
-                  <iframe width="500px" title="Chicago Park District: Movies in the Parks 2017 - Map" height="425px" src="https://data.cityofchicago.org/w/irwg-t6mm/3q3f-6823?cur=j_-10UEp1EN&from=root" frameborder="0"scrolling="no"><a href="https://data.cityofchicago.org/Events/Chicago-Park-District-Movies-in-the-Parks-2017-Map/irwg-t6mm" title="Chicago Park District: Movies in the Parks 2017 - Map" target="_blank">Chicago Park District: Movies in the Parks 2017 - Map</a></iframe>
+                  <iframe width="100%" title="Chicago Park District: Movies in the Parks 2017 - Map" height="425px" src="https://data.cityofchicago.org/w/irwg-t6mm/3q3f-6823?cur=j_-10UEp1EN&from=root" frameborder="0"scrolling="no"><a href="https://data.cityofchicago.org/Events/Chicago-Park-District-Movies-in-the-Parks-2017-Map/irwg-t6mm" title="Chicago Park District: Movies in the Parks 2017 - Map" target="_blank">Chicago Park District: Movies in the Parks 2017 - Map</a></iframe>
                 </div>
               </div>
         
@@ -197,11 +197,17 @@
               <button class="right grey lighten-1 waves-effect waves-grey darken-2 btn col s12" id="submit-button" type="submit">Add your tip</button><br>
                 <div class="card-content col s12" id="comments">
                     <p><ul class="collection with-header teal-text text-lighten-1 striped"> 
-                        {{#each moviescomments}}
+
+                      <li>Patrick says: "Get to Grant Park early, it usually
+                      fills up pretty fast!"</li>
+
+                      {{!-- The below handlebars would be used for rendering the comments table. It's hard coded for now, but in future versions it will be piped in from the database. --}}
+
+                        {{!-- {{#each movies}}
                         {{#if id}}
-                       {{> comment-block id='1'}}
+                       {{> comment-block}}
                        {{/if}}
-                  {{/each}}
+                  {{/each}} --}}
                     </ul></p>
                 </div>
         </div>
