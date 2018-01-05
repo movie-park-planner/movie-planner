@@ -2,6 +2,10 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 
+var Handlebars     = require('handlebars');
+var HandlebarsIntl = require('handlebars-intl');
+HandlebarsIntl.registerWith(Handlebars);
+
 var port = process.env.PORT || 3000;
 
 var app = express();
