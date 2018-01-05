@@ -29,6 +29,11 @@ body{
  height: 500px;
 }
 
+#your-list{
+ overflow: scroll;
+ height: 500px;
+}
+
 #comments{
  overflow: scroll;
  height: 300px;
