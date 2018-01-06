@@ -15,5 +15,8 @@ We have 2 major projects being worked on that will go into the next release. The
 
 - Express
 - Body Parser
+- Express-Handlebars
 - Handlebars
 - Handlebars Intl
+- Method Override
+- MySQL
