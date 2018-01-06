@@ -1,4 +1,4 @@
-# movie-planner
+# Movies in the Park Planner
 
 This is an app to help you plan out the perfect summer movie watching schedule. The city of Chicago does a fantastic job of bringing the big screen out into the many parks all across the city. But there are so many movies to choose from! With our app you can search through the extensive list of movies being shown and curate your own personal schedule.
 
