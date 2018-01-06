@@ -6,6 +6,8 @@ This is an app to help you plan out the perfect summer movie watching schedule. 
 
 ### Installing 
 
+Before doing anything, make sure that you have Node.js installed on your machine.
+
 1. Clone the repository to your local machine.
 2. Run 'npm install' in the command line to install package dependencies.
 3. Run 'node server.js" in the command line to initiate the server.
