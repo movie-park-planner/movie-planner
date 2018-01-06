@@ -9,3 +9,11 @@ On our site, we have designed it to be able to take the massive movie list for t
 After you have your own personalized schedule of movies chosen, we've provided some more information to help you maximize your movie watching experience. We've provided a map that displays the location of all of the movies throughout Chicago. To help sort your movies, each one is color coded to match a different movie rating. This is also a good way to help see if there are any movie screenings that will be close to you that you may want to add into your list.
 
 We have 2 major projects being worked on that will go into the next release. The first is to enable filters to help sort through the master list of movies. This will enable the user to be able to more swiftly put together their own schedule of movies they would like to attend. We've provided an example of what this would look like with the day of the week filter, and we would extend this to include filters for movie rating, date and possibly location as well. The next feature that would be part of the release would be a comment section where you would be able to provide tips for other movie goers. A sample of what this would look like is included at the bottom of the page. This would be helpful for people who have not attended any screenings yet, and more veteran movie goers could help out by providing advice that they've found helpful in the past.
+
+
+### Dependencies
+
+- Express
+- Body Parser
+- Handlebars
+- Handlebars Intl
