@@ -4,6 +4,12 @@
 
 This is an app to help you plan out the perfect summer movie watching schedule. The city of Chicago does a fantastic job of bringing the big screen out into the many parks all across the city. But there are so many movies to choose from! With our app you can search through the extensive list of movies being shown and curate your own personal schedule.
 
+### Installing 
+
+1. Clone the repository to your local machine.
+2. Run 'npm install' in the command line to install package dependencies.
+3. Run 'node server.js" in the command line to initiate the server.
+
 ## Our Process
 
 We were able to pull a list of all of the movies being shown from the City of Chicago website. This data provides the following information about the screening: title of the movie, the rating of the movie, whether there will be close captions or not, day of the week of the screening, date, the name of the park and the park address, and the park phone number. All of this data we've saved into a SQL database called movie_planner_db in a movie_showings table. From this information, we have pulled just the day of the week, date, title of the movie, name of the park and the movie rating to display on our page.
